@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'google_geo_jp'
+
+puts GoogleGeoJp.get_geo(ARGV[0],ARGV[1])

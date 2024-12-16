@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require 'google_geo_jp'
+require 'active_support/all'
+
+puts "================================================================"
+puts "所要時間は" + GoogleGeoJp.travel_time(ARGV[0], ARGV[1], GoogleGeoJp.get_location_as_string(ARGV[0], ARGV[2]), GoogleGeoJp.get_location_as_string(ARGV[0], ARGV[3])).to_s + "分"
+puts "================================================================"
